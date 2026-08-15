@@ -11,17 +11,47 @@ const CLIENT_URL =
 const httpServer =
   http.createServer(
     (req, res) => {
-      res.writeHead(200, {
-        "Content-Type":
-          "text/plain",
-      });
+
+      // =========================
+      // SERVER HOME / HEALTH CHECK
+      // =========================
+
+      if (
+        req.url === "/" ||
+        req.url === "/health"
+      ) {
+        res.writeHead(
+          200,
+          {
+            "Content-Type":
+              "text/plain",
+          }
+        );
+
+        res.end(
+          "Hokm multiplayer server is running."
+        );
+
+        return;
+      }
+
+      // =========================
+      // UNKNOWN ROUTE
+      // =========================
+
+      res.writeHead(
+        404,
+        {
+          "Content-Type":
+            "text/plain",
+        }
+      );
 
       res.end(
-        "Hokm multiplayer server is running."
+        "Not Found"
       );
     }
   );
-
 const io =
   new Server(
     httpServer,
