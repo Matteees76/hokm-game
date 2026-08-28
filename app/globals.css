@@ -3030,3 +3030,30 @@ box-sizing: border-box;
       rotate(360deg);
   }
 }
+
+
+
+
+
+
+.homeSeoSection {
+  width: min(700px, calc(100% - 40px));
+  margin: 60px auto 40px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.homeSeoSection h2 {
+  margin-bottom: 18px;
+  font-size: 28px;
+}
+
+.homeSeoSection p {
+  margin-bottom: 16px;
+  opacity: 0.85;
+}
+
+.homeSeoSection a {
+  font-weight: 700;
+  text-decoration: underline;
+}
