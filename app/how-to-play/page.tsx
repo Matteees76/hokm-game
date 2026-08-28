@@ -13,12 +13,14 @@ export default function HowToPlayPage() {
         </Link>
 
         <div>
-          <h1>How to Play Hokm</h1>
+<h1>How to Play Hokm</h1>
 
-          <p>
-            Learn the rules, turn order,
-            Hokm system, scoring and strategy.
-          </p>
+<p>
+  Learn how to play Hokm, the classic Persian
+  four-player card game. This guide explains the
+  rules of Hokm, choosing the trump suit, turn
+  order, tricks, scoring and basic strategy.
+</p>
         </div>
       </div>
 
