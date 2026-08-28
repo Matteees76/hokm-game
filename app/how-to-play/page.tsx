@@ -1,8 +1,69 @@
 import Link from "next/link";
 
 export default function HowToPlayPage() {
+
+const jsonLd = {
+  "@context": "https://schema.org",
+  "@type": "HowTo",
+  name: "How to Play Hokm",
+  description:
+    "Learn how to play Hokm, the classic Persian four-player trick-taking card game, including the Hâkem, trump suit, tricks, scoring and basic strategy.",
+
+  step: [
+    {
+      "@type": "HowToStep",
+      name: "Understand the objective",
+      text:
+        "Hokm is played by four players in two teams. The first team to win 7 tricks wins the hand, and the first team to win 7 hands wins the match.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Choose the Hâkem",
+      text:
+        "One player acts as the Hâkem and receives the first 5 cards before choosing the Hokm, or trump suit.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Choose the Hokm suit",
+      text:
+        "The Hâkem chooses Spades, Hearts, Clubs or Diamonds as the Hokm suit for the hand.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Play tricks",
+      text:
+        "Each player plays one card per trick. Players must follow the suit that was led if they have a card of that suit.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Determine the trick winner",
+      text:
+        "If no Hokm card is played, the highest card of the led suit wins. If Hokm is played, the highest Hokm card wins.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Win the hand",
+      text:
+        "The first team to win 7 tricks wins the hand.",
+    },
+    {
+      "@type": "HowToStep",
+      name: "Win the match",
+      text:
+        "The first team to win 7 hands wins the full match.",
+    },
+  ],
+};
+
   return (
     <main className="howToPlayPage">
+<script
+  type="application/ld+json"
+  dangerouslySetInnerHTML={{
+    __html: JSON.stringify(jsonLd),
+  }}
+/>
+
 
       <div className="howToPlayHeader">
         <Link
