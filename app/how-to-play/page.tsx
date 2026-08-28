@@ -528,6 +528,109 @@ const jsonLd = {
           </div>
         </section>
 
+        <section className="rulesSection faqSection">
+  <span className="sectionNumber">
+    12
+  </span>
+
+  <h2>Hokm Frequently Asked Questions</h2>
+
+  <div className="faqItem">
+    <h3>What is Hokm?</h3>
+
+    <p>
+      Hokm is a traditional Persian trick-taking
+      card game played with a standard 52-card deck.
+      Four players compete in two teams of two.
+    </p>
+  </div>
+
+  <div className="faqItem">
+    <h3>How many players play Hokm?</h3>
+
+    <p>
+      Traditional Hokm is played by four players.
+      The player sitting opposite you is your
+      teammate, while the other two players form
+      the opposing team.
+    </p>
+  </div>
+
+  <div className="faqItem">
+    <h3>What does Hâkem mean in Hokm?</h3>
+
+    <p>
+      The Hâkem is the player who chooses the Hokm,
+      or trump suit, for the hand. The Hâkem first
+      receives 5 cards and chooses between Spades,
+      Hearts, Clubs or Diamonds.
+    </p>
+  </div>
+
+  <div className="faqItem">
+    <h3>What is the Hokm suit?</h3>
+
+    <p>
+      The Hokm suit is the trump suit chosen by the
+      Hâkem. Cards from the Hokm suit can beat cards
+      from the other suits when they are legally
+      played in a trick.
+    </p>
+  </div>
+
+  <div className="faqItem">
+    <h3>Do you have to follow suit in Hokm?</h3>
+
+    <p>
+      Yes. If you have a card belonging to the suit
+      that was led, you must play a card from that
+      suit. If you do not have that suit, you may
+      play any card, including a Hokm card.
+    </p>
+  </div>
+
+  <div className="faqItem">
+    <h3>What is the highest card in Hokm?</h3>
+
+    <p>
+      Ace is the highest-ranking card in Hokm,
+      followed by King, Queen, Jack, 10 and the
+      remaining numbered cards down to 2.
+    </p>
+  </div>
+
+  <div className="faqItem">
+    <h3>How do you win a trick in Hokm?</h3>
+
+    <p>
+      If no Hokm card is played, the highest card
+      from the suit that was led wins the trick.
+      If one or more Hokm cards are played, the
+      highest Hokm card wins.
+    </p>
+  </div>
+
+  <div className="faqItem">
+    <h3>How do you win a game of Hokm?</h3>
+
+    <p>
+      In Classic Hokm, the first team to win 7
+      tricks wins the hand. The first team to win
+      7 hands wins the full match.
+    </p>
+  </div>
+
+  <div className="faqItem">
+    <h3>Can I play Hokm online?</h3>
+
+    <p>
+      Yes. Classic Hokm lets you play Hokm online
+      in your browser against bots, other online
+      players, or friends in a private game.
+    </p>
+  </div>
+</section>
+
       </div>
 
     </main>
