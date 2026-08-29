@@ -3076,3 +3076,27 @@ box-sizing: border-box;
 .faqItem p {
   margin: 0;
 }
+
+
+
+.multiplayerSeoSection {
+  width: min(650px, calc(100% - 40px));
+  margin: 50px auto 40px;
+  text-align: center;
+  line-height: 1.7;
+}
+
+.multiplayerSeoSection h2 {
+  margin-bottom: 16px;
+  font-size: 26px;
+}
+
+.multiplayerSeoSection p {
+  margin-bottom: 14px;
+  opacity: 0.82;
+}
+
+.multiplayerSeoSection a {
+  font-weight: 700;
+  text-decoration: underline;
+}

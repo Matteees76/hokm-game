@@ -884,6 +884,42 @@ export default function PrivateGamePage() {
         </div>
       )}
 
+
+      {!room && (
+        <section className="multiplayerSeoSection">
+
+          <h2>
+            Play Hokm Online With Friends
+          </h2>
+
+          <p>
+            Create a private Hokm game and play the
+            classic Persian card game online with
+            friends. Create a room, share the room
+            code and let other players join from
+            their own browser.
+          </p>
+
+          <p>
+            Private Hokm games are played with four
+            players in two teams. If you do not have
+            four people, the host can fill empty seats
+            with computer-controlled bots before
+            starting the game.
+          </p>
+
+          <p>
+            If you are new to Hokm, read our{" "}
+            <Link href="/how-to-play">
+              complete Hokm rules and how-to-play guide
+            </Link>{" "}
+            to learn about the Hâkem, trump suit,
+            tricks and scoring.
+          </p>
+
+        </section>
+      )}
+
     </main>
   );
 }

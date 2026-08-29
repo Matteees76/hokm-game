@@ -1,5 +1,8 @@
 "use client";
 
+import Link from "next/link";
+
+
 import {
   useEffect,
   useState,
@@ -386,7 +389,41 @@ export default function OnlinePage() {
           </>
         )}
 
-      </div>
+       </div>
+
+
+      {!searching && (
+        <section className="multiplayerSeoSection">
+
+          <h2>
+            Play Hokm Online
+          </h2>
+
+          <p>
+            Play Hokm online against other players
+            directly in your browser. Enter your name,
+            join matchmaking and wait for four players
+            to be found before the match begins.
+          </p>
+
+          <p>
+            Hokm is a traditional Persian card game
+            played by four players in two teams. Work
+            with your teammate, follow suit and use the
+            Hokm trump suit to compete for tricks and
+            win the match.
+          </p>
+
+          <p>
+            Never played before? Read our{" "}
+            <Link href="/how-to-play">
+              guide to the rules of Hokm
+            </Link>{" "}
+            before joining an online match.
+          </p>
+
+        </section>
+      )}
 
     </main>
   );
