@@ -4,6 +4,9 @@ import {
 
 import BackgroundMusic from "./BackgroundMusic";
 
+
+import Script from "next/script";
+
 import type {
   Metadata,
   Viewport,
@@ -153,11 +156,20 @@ export default function RootLayout({
   children,
 }: LayoutProps<"/">) {
   return (
-    <html
-      lang="en"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
-    >
-      <body>
+   <html
+  lang="en"
+  className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+>
+  <head>
+    <Script
+      async
+      src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-7836866234282668"
+      crossOrigin="anonymous"
+      strategy="afterInteractive"
+    />
+  </head>
+
+  <body>
 
         <BackgroundMusic />
 
