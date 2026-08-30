@@ -28,9 +28,9 @@ export default function Card({
 
   return (
     <button
-  className={`playingCard ${isRed ? "redCard" : ""} ${
-    isHokm ? "hokmCard" : ""
-  }`}
+ className={`playingCard ${isRed ? "redCard" : "blackCard"} ${
+  isHokm ? "hokmCard" : ""
+}`}
   onClick={onClick}
 >
       <span className="cardRank">

@@ -53,13 +53,20 @@ const httpServer =
     }
   );
   
+const allowedOrigins = [
+  CLIENT_URL,
+  "http://localhost:3000",
+  "http://192.168.1.241:3000",
+  "https://classichokm.com",
+  "https://www.classichokm.com",
+];
+
 const io =
   new Server(
     httpServer,
     {
       cors: {
-        origin:
-          CLIENT_URL,
+        origin: allowedOrigins,
 
         methods: [
           "GET",

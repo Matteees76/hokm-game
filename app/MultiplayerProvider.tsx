@@ -370,11 +370,10 @@ export function MultiplayerProvider({
   // =========================
 
   useEffect(() => {
-  const multiplayerServerUrl =
+const multiplayerServerUrl =
   process.env
-    .NEXT_PUBLIC_MULTIPLAYER_URL ||
+    .NEXT_PUBLIC_SOCKET_URL ||
   "http://localhost:3001";
-
 const newSocket =
   io(
     multiplayerServerUrl
