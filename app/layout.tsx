@@ -46,6 +46,8 @@ export const metadata:
       "https://classichokm.com"
     ),
 
+    
+
   title: {
     default:
       "Classic Hokm – Play Hokm Online",
@@ -118,6 +120,11 @@ export const metadata:
     description:
       "Play the classic Persian card game Hokm online against bots, friends, or other players.",
   },
+
+other: {
+  "google-adsense-account":
+    "ca-pub-7836866234282668",
+},
 
   robots: {
     index:
