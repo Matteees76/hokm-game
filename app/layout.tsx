@@ -6,6 +6,7 @@ import BackgroundMusic from "./BackgroundMusic";
 
 import type {
   Metadata,
+  Viewport,
 } from "next";
 
 import {
@@ -139,6 +140,13 @@ export const metadata:
         -1,
     },
   },
+};
+
+
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
 };
 
 export default function RootLayout({

@@ -2777,13 +2777,16 @@ box-sizing: border-box;
 
 
 
-
 .onlinePage {
   min-height: 100vh;
 
   display: flex;
+  flex-direction: column;
+
   align-items: center;
-  justify-content: center;
+  justify-content: flex-start;
+
+  gap: 35px;
 
   background:
     radial-gradient(
@@ -2793,7 +2796,7 @@ box-sizing: border-box;
       #051c18 100%
     );
 
-  padding: 24px;
+  padding: 40px 24px 60px;
 }
 
 .onlinePanel {
@@ -3351,36 +3354,31 @@ box-sizing: border-box;
      ========================= */
 
 .hokmChooser {
-  width: calc(100% - 30px);
+  width: calc(100% - 24px);
   max-width: 350px;
-
-  top: 65%;
-
-  padding: 22px 16px;
-
-  border-radius: 16px;
+  top: 43%;
+  padding: 18px 14px;
+  border-radius: 15px;
 }
 
-  .hokmChooser h2 {
-    font-size: 22px;
-  }
+.hokmChooser h2 {
+  margin-bottom: 6px;
+  font-size: 21px;
+}
 
-  .hokmChooser p {
-    margin-bottom: 18px;
-    font-size: 14px;
-  }
+.hokmChooser p {
+  margin-bottom: 14px;
+  font-size: 13px;
+}
 
-  .hokmButtons {
-    gap: 7px;
-  }
+.hokmButtons {
+  gap: 7px;
+}
 
-  .hokmButtons button {
-    height: 55px;
-
-    border-radius: 9px;
-
-    font-size: 31px;
-  }
+.hokmButtons button {
+  height: 52px;
+  font-size: 29px;
+}
 
 
   /* =========================
@@ -3493,3 +3491,236 @@ box-sizing: border-box;
 }
 
 
+
+
+/* ==================================================
+   ONLINE PAGE - MOBILE
+   ================================================== */
+
+@media (max-width: 700px) {
+
+  .onlinePage {
+    width: 100%;
+    min-height: 100dvh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 28px;
+    padding: 32px 16px 50px;
+    overflow-x: hidden;
+  }
+
+  .onlinePanel {
+    width: 100%;
+    max-width: 380px;
+    margin: 0 auto;
+    padding: 28px 20px;
+  }
+
+  .onlinePanel h1 {
+    font-size: 34px;
+    text-align: center;
+  }
+
+  .onlinePanel p {
+    font-size: 16px;
+    text-align: center;
+  }
+
+  .onlinePanel input {
+    width: 100%;
+    max-width: none;
+    box-sizing: border-box;
+  }
+
+  .onlineFindMatchButton,
+  .onlineCancelButton {
+    width: 100%;
+    max-width: none;
+  }
+
+  .multiplayerSeoSection {
+    width: 100%;
+    max-width: 420px;
+    margin: 0 auto;
+    padding: 0 6px;
+    text-align: center;
+  }
+
+  .multiplayerSeoSection h2 {
+    font-size: 27px;
+    line-height: 1.2;
+  }
+
+  .multiplayerSeoSection p {
+    font-size: 15px;
+    line-height: 1.7;
+  }
+}
+
+
+
+
+@media (max-width: 700px) {
+
+  .onlinePage {
+    width: 100% !important;
+    min-height: 100dvh !important;
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: center !important;
+    justify-content: flex-start !important;
+    gap: 28px !important;
+    padding: 28px 16px 50px !important;
+    overflow-x: hidden !important;
+  }
+
+  .onlinePanel {
+    width: calc(100% - 20px) !important;
+    max-width: 380px !important;
+    margin: 0 auto !important;
+    padding: 28px 20px !important;
+  }
+
+  .multiplayerSeoSection {
+    width: calc(100% - 24px) !important;
+    max-width: 420px !important;
+    margin: 0 auto !important;
+    padding: 0 !important;
+    text-align: center !important;
+  }
+
+  .multiplayerSeoSection h2 {
+    font-size: 27px !important;
+    line-height: 1.2 !important;
+  }
+
+  .multiplayerSeoSection p {
+    font-size: 15px !important;
+    line-height: 1.7 !important;
+  }
+
+  .hokmChooser {
+    width: calc(100% - 24px) !important;
+    max-width: 350px !important;
+    top: 43% !important;
+    padding: 18px 14px !important;
+    border-radius: 15px !important;
+  }
+
+  .hokmChooser h2 {
+    margin-bottom: 6px !important;
+    font-size: 21px !important;
+  }
+
+  .hokmChooser p {
+    margin-bottom: 14px !important;
+    font-size: 13px !important;
+  }
+
+  .hokmButtons {
+    gap: 7px !important;
+  }
+
+  .hokmButtons button {
+    height: 52px !important;
+    font-size: 29px !important;
+  }
+}
+
+
+/* ==================================================
+   ONLINE PAGE - PHONE
+   ================================================== */
+
+@media screen and (max-width: 700px) {
+
+  .onlinePage {
+    min-height: 100dvh;
+    width: 100%;
+    box-sizing: border-box;
+
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    grid-template-rows: auto auto !important;
+
+    align-items: start !important;
+    justify-items: center !important;
+
+    gap: 30px !important;
+
+    padding: 30px 16px 50px !important;
+
+    overflow-x: hidden !important;
+  }
+
+  .onlinePanel {
+    grid-column: 1 !important;
+    grid-row: 1 !important;
+
+    width: 100% !important;
+    max-width: 380px !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+    padding: 28px 20px !important;
+  }
+
+  .onlinePanel h1 {
+    font-size: 34px !important;
+    text-align: center !important;
+  }
+
+  .onlinePanel p {
+    font-size: 16px !important;
+    text-align: center !important;
+  }
+
+  .onlinePanel input {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .onlineFindMatchButton,
+  .onlineCancelButton {
+    width: 100% !important;
+    box-sizing: border-box !important;
+  }
+
+  .multiplayerSeoSection {
+    grid-column: 1 !important;
+    grid-row: 2 !important;
+
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 380px !important;
+
+    box-sizing: border-box !important;
+
+    margin: 0 !important;
+    padding: 0 10px !important;
+
+    text-align: center !important;
+  }
+
+  .multiplayerSeoSection h2 {
+    margin: 0 0 14px !important;
+
+    font-size: 25px !important;
+    line-height: 1.25 !important;
+  }
+
+  .multiplayerSeoSection p {
+    width: 100% !important;
+
+    margin: 0 0 14px !important;
+
+    font-size: 15px !important;
+    line-height: 1.6 !important;
+
+    text-align: center !important;
+  }
+}
