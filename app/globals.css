@@ -4014,4 +4014,28 @@ box-sizing: border-box;
 .gameTable .hokmDisplay {
   top: 34px !important;
 }
+
+/* Larger cards in the player's hand */
+.gameTable .hand .playingCard {
+  width: 64px !important;
+  min-width: 64px !important;
+  height: 92px !important;
+  margin-left: -39px !important;
+  padding: 6px !important;
+}
+
+/* Keep the first card aligned normally */
+.gameTable .hand .playingCard:first-child {
+  margin-left: 0 !important;
+}
+
+/* Larger rank and suit */
+.gameTable .hand .cardRank {
+  font-size: 18px !important;
+}
+
+.gameTable .hand .cardSuit {
+  font-size: 25px !important;
+}
+
 }
