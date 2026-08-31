@@ -4038,4 +4038,30 @@ box-sizing: border-box;
   font-size: 25px !important;
 }
 
+/* Brighter turquoise table colour on mobile */
+.gameTable {
+  background:
+    radial-gradient(
+      circle at 50% 45%,
+      rgba(87, 205, 170, 0.32) 0%,
+      rgba(39, 140, 112, 0.16) 38%,
+      transparent 65%
+    ),
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.018) 0px,
+      rgba(255, 255, 255, 0.018) 2px,
+      transparent 2px,
+      transparent 5px
+    ),
+    radial-gradient(
+      ellipse at center,
+      #318b70 0%,
+      #1d6653 48%,
+      #104538 75%,
+      #082b24 100%
+    ) !important;
+}
+
+
 }
