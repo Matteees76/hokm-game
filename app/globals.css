@@ -4,7 +4,7 @@
   .gameTable .hokmChooser {
     width: 285px !important;
     max-width: 285px !important;
-    top: 40% !important;
+   top: 43% !important;
     left: 50% !important;
     transform: translate(-50%, -50%) !important;
     padding: 12px 10px !important;
@@ -34,9 +34,9 @@
   }
 
   /* Move Player 3 down */
-  .gameTable .playerTop {
-    top: 31% !important;
-  }
+.gameTable .playerTop {
+  top: 28% !important;
+}
 }
 
 
