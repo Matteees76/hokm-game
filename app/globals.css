@@ -3994,4 +3994,24 @@ box-sizing: border-box;
   .gameTable .playerTop {
     top: 20% !important;
   }
+
+
+  /* Move side player labels inward */
+.gameTable .playerLeft {
+  left: 22px !important;
+}
+
+.gameTable .playerRight {
+  right: 22px !important;
+}
+
+/* Move top score panels down slightly */
+.gameTable .scoreDisplay {
+  top: 34px !important;
+}
+
+/* Move Hokm display down slightly too */
+.gameTable .hokmDisplay {
+  top: 34px !important;
+}
 }
