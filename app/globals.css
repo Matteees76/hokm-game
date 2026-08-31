@@ -3960,7 +3960,7 @@ box-sizing: border-box;
     width: 285px !important;
     max-width: 285px !important;
 
-    top: 40% !important;
+    top: 55% !important;
     left: 50% !important;
 
     transform: translate(-50%, -50%) !important;
@@ -3992,6 +3992,6 @@ box-sizing: border-box;
   }
 
   .gameTable .playerTop {
-    top: 31% !important;
+    top: 20% !important;
   }
 }
