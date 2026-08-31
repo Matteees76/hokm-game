@@ -427,12 +427,69 @@ button {
 
   background:
     radial-gradient(
+      circle at 50% 45%,
+      rgba(77, 176, 137, 0.28) 0%,
+      rgba(30, 101, 79, 0.12) 36%,
+      transparent 63%
+    ),
+
+    repeating-linear-gradient(
+      45deg,
+      rgba(255, 255, 255, 0.018) 0px,
+      rgba(255, 255, 255, 0.018) 2px,
+      transparent 2px,
+      transparent 5px
+    ),
+
+    radial-gradient(
       ellipse at center,
-      #245f4d 0%,
-      #12382f 55%,
-      #081a17 100%
+      #286c57 0%,
+      #174c3d 45%,
+      #0b3028 72%,
+      #041411 100%
     );
+
+  box-shadow:
+    inset 0 0 180px rgba(0, 0, 0, 0.65);
 }
+
+.gameTable::before {
+  content: "";
+
+  position: absolute;
+
+  inset: 16px;
+
+  border-radius: 28px;
+
+  border: 2px solid rgba(215, 177, 71, 0.32);
+
+  box-shadow:
+    inset 0 0 0 5px rgba(0, 0, 0, 0.12),
+    inset 0 0 45px rgba(0, 0, 0, 0.22),
+    0 0 25px rgba(215, 177, 71, 0.08);
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
+.gameTable::after {
+  content: "";
+
+  position: absolute;
+
+  inset: 27px;
+
+  border-radius: 22px;
+
+  border: 1px solid rgba(255, 226, 136, 0.11);
+
+  pointer-events: none;
+
+  z-index: 0;
+}
+
 
 .player {
   position: absolute;
@@ -507,14 +564,70 @@ button {
   z-index: 10;
 }
 
+.cardRank {
+  position: absolute;
+  top: 8px;
+  left: 9px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+
+  letter-spacing: -1px;
+
+  color: #111;
+
+  text-shadow:
+    0 1px 0 rgba(255, 255, 255, 0.8);
+}
+
+.redCard .cardRank {
+  color: #b51f2a;
+}
+
+.cardSuit {
+  position: absolute;
+  top: 34px;
+  left: 10px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1;
+
+  color: #111;
+}
+
+.redCard .cardSuit {
+  color: #c5202b;
+}
+
+
 .playingCard {
   width: 90px;
   height: 130px;
 
-  border: none;
-  border-radius: 10px;
+border: 1px solid rgba(25, 25, 25, 0.28);
+border-radius: 11px;
 
-  background: #f6f2e8;
+background:
+  radial-gradient(
+    circle at 35% 25%,
+    #ffffff 0%,
+    #faf8f1 42%,
+    #eee9dd 100%
+  );
+
+box-shadow:
+  0 2px 2px rgba(0, 0, 0, 0.18),
+  0 7px 14px rgba(0, 0, 0, 0.28),
+  inset 0 0 0 1px rgba(255, 255, 255, 0.75),
+  inset 0 -3px 5px rgba(0, 0, 0, 0.06);
+
+transition:
+  transform 0.16s ease,
+  box-shadow 0.16s ease,
+  filter 0.16s ease;
 
   display: flex;
   flex-direction: column;
@@ -533,6 +646,58 @@ button {
   transition:
     transform 0.15s ease;
     position: relative;
+    
+}
+
+.playingCard::after {
+  content: "";
+
+  position: absolute;
+  inset: 4px;
+
+  border: 1px solid rgba(40, 40, 40, 0.08);
+  border-radius: 7px;
+
+  pointer-events: none;
+}
+
+.playingCard::before {
+  content: attr(data-suit);
+
+  position: absolute;
+  right: 9px;
+  bottom: 8px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+
+  color: inherit;
+
+  transform: rotate(180deg);
+
+  opacity: 0.9;
+}
+
+
+.cardSuit {
+  position: absolute;
+  top: 34px;
+  left: 10px;
+
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 21px;
+  line-height: 1;
+}
+
+.playerHand .playingCard:hover {
+  transform: translateY(-9px);
+
+  box-shadow:
+    0 4px 4px rgba(0, 0, 0, 0.18),
+    0 14px 22px rgba(0, 0, 0, 0.38),
+    inset 0 0 0 1px rgba(255, 255, 255, 0.8);
+
+  filter: brightness(1.03);
 }
 
 .hand .playingCard {
@@ -548,7 +713,14 @@ button {
 }
 
 .cardRank {
+  font-family: Georgia, "Times New Roman", serif;
   font-size: 24px;
+  font-weight: 700;
+  line-height: 1;
+
+  font-variant-numeric: lining-nums tabular-nums;
+
+  letter-spacing: 0;
 }
 
 .cardSuit {
@@ -2779,6 +2951,7 @@ box-sizing: border-box;
 
 .onlinePage {
   min-height: 100vh;
+  width: 100%;
 
   display: flex;
   flex-direction: column;
@@ -2786,7 +2959,7 @@ box-sizing: border-box;
   align-items: center;
   justify-content: flex-start;
 
-  gap: 35px;
+  gap: 32px;
 
   background:
     radial-gradient(
@@ -2796,7 +2969,9 @@ box-sizing: border-box;
       #051c18 100%
     );
 
-  padding: 40px 24px 60px;
+  padding: 40px 20px 60px;
+
+  box-sizing: border-box;
 }
 
 .onlinePanel {
@@ -3083,10 +3258,18 @@ box-sizing: border-box;
 
 
 .multiplayerSeoSection {
-  width: min(650px, calc(100% - 40px));
-  margin: 50px auto 40px;
+  display: block;
+  width: 100%;
+  max-width: 650px;
+
+  flex: none;
+
+  margin: 0 auto 40px;
+
   text-align: center;
   line-height: 1.7;
+
+  box-sizing: border-box;
 }
 
 .multiplayerSeoSection h2 {
@@ -3724,3 +3907,5 @@ box-sizing: border-box;
     text-align: center !important;
   }
 }
+
+
