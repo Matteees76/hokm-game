@@ -3909,3 +3909,41 @@ box-sizing: border-box;
 }
 
 
+@media (max-width: 700px) {
+
+  /* Smaller, better-positioned Hokm chooser */
+  .hokmChooser {
+    width: calc(100% - 70px) !important;
+    max-width: 310px !important;
+
+    top: 38% !important;
+
+    padding: 14px 12px !important;
+
+    border-radius: 14px !important;
+  }
+
+  .hokmChooser h2 {
+    font-size: 18px !important;
+    margin-bottom: 4px !important;
+  }
+
+  .hokmChooser p {
+    font-size: 12px !important;
+    margin-bottom: 11px !important;
+  }
+
+  .hokmButtons {
+    gap: 6px !important;
+  }
+
+  .hokmButtons button {
+    height: 44px !important;
+    font-size: 24px !important;
+    border-radius: 10px !important;
+  }
+
+    .playerTop {
+    top: 29% !important;
+  }
+}
