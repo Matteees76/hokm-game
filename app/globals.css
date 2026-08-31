@@ -3451,10 +3451,10 @@ box-sizing: border-box;
     top: 50%;
   }
 
-  .yourTurnText {
-    font-size: 14px;
-  }
-
+.yourTurnText {
+  font-size: 14px;
+  transform: translateY(6px);
+}
 
   /* =========================
      PLAYER HAND
@@ -3539,7 +3539,7 @@ box-sizing: border-box;
 .hokmChooser {
   width: calc(100% - 24px);
   max-width: 350px;
-  top: 43%;
+  top: 31%;
   padding: 18px 14px;
   border-radius: 15px;
 }
@@ -3784,13 +3784,13 @@ box-sizing: border-box;
     line-height: 1.7 !important;
   }
 
-  .hokmChooser {
-    width: calc(100% - 24px) !important;
-    max-width: 350px !important;
-    top: 43% !important;
-    padding: 18px 14px !important;
-    border-radius: 15px !important;
-  }
+.hokmChooser {
+  width: calc(100% - 24px) !important;
+  max-width: 350px !important;
+  top: 31% !important;
+  padding: 18px 14px !important;
+  border-radius: 15px !important;
+}
 
   .hokmChooser h2 {
     margin-bottom: 6px !important;
