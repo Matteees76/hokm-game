@@ -4005,11 +4005,11 @@ box-sizing: border-box;
 
   /* Move side player labels inward */
 .gameTable .playerLeft {
-  left: 22px !important;
+  left: 24px !important;
 }
 
 .gameTable .playerRight {
-  right: 22px !important;
+  right: 24px !important;
 }
 
 /* Move top score panels down slightly */
