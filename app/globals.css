@@ -4098,4 +4098,28 @@ box-sizing: border-box;
 .gameTable .hokmDisplay {
   left: 35px !important;
 }
+
+
+/* Keep full 13-card hand inside the screen */
+.gameTable .playerHand {
+  width: calc(100% - 90px) !important;
+  max-width: calc(100% - 90px) !important;
+  justify-content: center !important;
+  overflow: visible !important;
+}
+
+/* Increase overlap between cards */
+.gameTable .playerHand .playingCard {
+  margin-left: -42px !important;
+}
+
+/* First card should not overlap off-screen */
+.gameTable .playerHand .playingCard:first-child {
+  margin-left: 0 !important;
+}
+
+/* Keep Sort button inside the screen */
+.gameTable .sortButton {
+  right: 18px !important;
+}
 }
