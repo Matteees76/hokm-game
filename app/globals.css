@@ -4044,7 +4044,10 @@ box-sizing: border-box;
    ========================================= */
 @media screen and (max-width: 1200px) {
 
-  /* Game screen */
+  /* =========================
+     GAME SCREEN COLOUR
+     ========================= */
+
   .gameTable {
     background:
       radial-gradient(
@@ -4069,7 +4072,11 @@ box-sizing: border-box;
       ) !important;
   }
 
-  /* Home + other pages */
+
+  /* =========================
+     HOME + OTHER PAGES
+     ========================= */
+
   .home,
   .onlinePage,
   .privateLobbyPage,
@@ -4079,56 +4086,93 @@ box-sizing: border-box;
         circle at 50% 38%,
         #1b8486 0%,
         #073c42 45%,
-        #073c42 45%,
-       #073c42 100%
+        #073c42 75%,
+        #073c42 100%
       ) !important;
   }
 
   body {
     background: #073c42 !important;
   }
-}
-
-/* Move score display slightly left */
-.gameTable .scoreDisplay {
-  right: 35px !important;
-}
-
-/* Move Hokm indicator slightly to the right */
-.gameTable .hokmDisplay {
-  left: 35px !important;
-}
 
 
-/* Keep full 13-card hand inside the screen */
-.gameTable .playerHand {
-  width: calc(100% - 90px) !important;
-  max-width: calc(100% - 90px) !important;
-  justify-content: center !important;
-  overflow: visible !important;
-}
+  /* =========================
+     SCORE DISPLAY
+     ========================= */
 
-/* Increase overlap between cards */
-.gameTable .playerHand .playingCard {
-  margin-left: -46px !important;
-}
+  .gameTable .scoreDisplay {
+    right: 35px !important;
+  }
 
-/* First card should not overlap off-screen */
-.gameTable .playerHand .playingCard:first-child {
-  margin-left: 0 !important;
-}
 
-/* Keep Sort button inside the screen */
-.gameTable .sortButton {
-  right: 18px !important;
-}
+  /* =========================
+     HOKM INDICATOR
+     ========================= */
 
-/* Move Player 2 and Player 4 played cards slightly inward */
-.gameTable .cardPosition2 {
-  left: 39% !important;
-}
+  .gameTable .hokmDisplay {
+    left: 35px !important;
+  }
 
-.gameTable .cardPosition4 {
-  left: 61% !important;
+
+  /* =========================
+     PLAYER HAND
+     ========================= */
+
+  .gameTable .hand {
+    width: calc(100% - 28px) !important;
+    max-width: calc(100% - 28px) !important;
+    padding: 0 !important;
+
+    justify-content: center !important;
+
+    overflow: visible !important;
+  }
+
+
+  /* Larger cards + stronger overlap */
+  .gameTable .hand .playingCard {
+    width: 64px !important;
+    min-width: 64px !important;
+    height: 92px !important;
+
+    margin-left: -46px !important;
+  }
+
+
+  /* First card starts normally */
+  .gameTable .hand .playingCard:first-child {
+    margin-left: 0 !important;
+  }
+
+
+  /* =========================
+     SORT BUTTON
+     ========================= */
+
+  .gameTable .sortButton {
+    margin-left: 3px !important;
+
+    padding: 7px 6px !important;
+
+    font-size: 10px !important;
+
+    flex-shrink: 0 !important;
+  }
+
+
+  /* =========================
+     PLAYER 2 + 4 PLAYED CARDS
+     ========================= */
+
+  /* Player 2 */
+  .gameTable .leftPlayedCard {
+    left: 27px !important;
+  }
+
+  /* Player 4 */
+  .gameTable .rightPlayedCard {
+    right: 27px !important;
+  }
+
 }
 }
