@@ -3504,10 +3504,10 @@ box-sizing: border-box;
    ========================= */
 
 .gameTable .hand {
-  width: calc(100% - 20px) !important;
-  max-width: calc(100% - 20px) !important;
+  width: calc(100% - 12px) !important;
+  max-width: calc(100% - 12px) !important;
 
-  left: 10px !important;
+  left: 6px !important;
   transform: none !important;
 
   padding: 0 !important;
@@ -3519,31 +3519,39 @@ box-sizing: border-box;
   overflow: visible !important;
 }
 
-
-/* Cards */
 .gameTable .hand .playingCard {
-  width: 50px !important;
-  min-width: 50px !important;
-  max-width: 50px !important;
+  width: 48px !important;
+  min-width: 48px !important;
+  max-width: 48px !important;
 
   height: 88px !important;
   min-height: 88px !important;
 
-  flex: 0 0 50px !important;
+  flex: 0 0 48px !important;
 
   margin-left: calc(
     (
-      (100vw - 20px) -
-      (50px * var(--hand-count))
+      (100vw - 12px) -
+      (48px * var(--hand-count))
     ) /
     (var(--hand-count) - 1)
   ) !important;
+
+  padding: 5px !important;
 }
 
-
-/* First card starts at the left edge of the hand */
 .gameTable .hand .playingCard:first-child {
   margin-left: 0 !important;
+}
+
+.gameTable .hand .cardRank {
+  font-size: 16px !important;
+  left: 5px !important;
+}
+
+.gameTable .hand .cardSuit {
+  font-size: 22px !important;
+  left: 6px !important;
 }
 
 
@@ -4006,28 +4014,7 @@ box-sizing: border-box;
   top: 34px !important;
 }
 
-/* Larger cards in the player's hand */
-.gameTable .hand .playingCard {
-  width: 64px !important;
-  min-width: 64px !important;
-  height: 92px !important;
-  margin-left: -39px !important;
-  padding: 6px !important;
-}
 
-/* Keep the first card aligned normally */
-.gameTable .hand .playingCard:first-child {
-  margin-left: 0 !important;
-}
-
-/* Larger rank and suit */
-.gameTable .hand .cardRank {
-  font-size: 18px !important;
-}
-
-.gameTable .hand .cardSuit {
-  font-size: 25px !important;
-}
 
 /* =========================================
    MOBILE TURQUOISE COLOUR THEME
@@ -4119,20 +4106,7 @@ box-sizing: border-box;
   }
 
 
-  /* Larger cards + stronger overlap */
-  .gameTable .hand .playingCard {
-    width: 64px !important;
-    min-width: 64px !important;
-    height: 92px !important;
-
-    margin-left: -42px !important;
-  }
-
-
-  /* First card starts normally */
-  .gameTable .hand .playingCard:first-child {
-    margin-left: 0 !important;
-  }
+ 
 
 
   /* =========================
