@@ -4110,7 +4110,7 @@ box-sizing: border-box;
 
 /* Increase overlap between cards */
 .gameTable .playerHand .playingCard {
-  margin-left: -42px !important;
+  margin-left: -46px !important;
 }
 
 /* First card should not overlap off-screen */
