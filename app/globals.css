@@ -1,3 +1,4 @@
+
 @media screen and (max-width: 1200px) {
 
   /* Smaller Hâkem chooser, positioned nearer the centre */
@@ -4041,7 +4042,6 @@ box-sizing: border-box;
 /* =========================================
    MOBILE TURQUOISE COLOUR THEME
    ========================================= */
-
 @media screen and (max-width: 1200px) {
 
   /* Game screen */
@@ -4078,9 +4078,9 @@ box-sizing: border-box;
       radial-gradient(
         circle at 50% 38%,
         #1b8486 0%,
-        #0e6b6c 45%,
-        #105d61 75%,
-        #073c42 100%
+        #073c42 45%,
+        #073c42 45%,
+       #073c42 100%
       ) !important;
   }
 
@@ -4088,6 +4088,4 @@ box-sizing: border-box;
     background: #073c42 !important;
   }
 }
-
-
 }
