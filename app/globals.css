@@ -3520,7 +3520,7 @@ box-sizing: border-box;
   min-width: 64px !important;
   height: 92px !important;
 
-  margin-left: -41px !important;
+  margin-left: -36px !important;
 }
 
 .gameTable .hand .playingCard:first-child {
@@ -3539,7 +3539,7 @@ box-sizing: border-box;
 .gameTable .sortButton {
   position: absolute !important;
 
-  left: 8px !important;
+  left: 18px !important;
   bottom: 98px !important;
 
   margin: 0 !important;
