@@ -4093,4 +4093,9 @@ box-sizing: border-box;
 .gameTable .scoreDisplay {
   right: 35px !important;
 }
+
+/* Move Hokm indicator slightly to the right */
+.gameTable .hokmDisplay {
+  left: 35px !important;
+}
 }
