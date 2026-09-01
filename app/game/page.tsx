@@ -1,6 +1,11 @@
 "use client";
 
-import { useEffect, useState ,useRef,} from "react";
+import {
+  useEffect,
+  useState,
+  useRef,
+  type CSSProperties,
+} from "react";
 
 import Card from "@/components/Card";
 
@@ -1881,7 +1886,17 @@ setVoidSuits({
   </div>
 )}
 
-      <div className="hand">
+<div
+  className="hand"
+  style={
+    {
+      "--hand-count": Math.max(
+        game.player1.length,
+        2
+      ),
+    } as CSSProperties
+  }
+>
   {game.player1.map(
     (card, index) => (
       <Card
