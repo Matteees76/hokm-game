@@ -4088,4 +4088,9 @@ box-sizing: border-box;
     background: #073c42 !important;
   }
 }
+
+/* Move score display slightly left */
+.gameTable .scoreDisplay {
+  right: 35px !important;
+}
 }
