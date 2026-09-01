@@ -4122,4 +4122,13 @@ box-sizing: border-box;
 .gameTable .sortButton {
   right: 18px !important;
 }
+
+/* Move Player 2 and Player 4 played cards slightly inward */
+.gameTable .cardPosition2 {
+  left: 39% !important;
+}
+
+.gameTable .cardPosition4 {
+  left: 61% !important;
+}
 }
