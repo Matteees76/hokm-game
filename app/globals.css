@@ -3520,7 +3520,7 @@ box-sizing: border-box;
   min-width: 64px !important;
   height: 92px !important;
 
-  margin-left: -30px !important;
+  margin-left: -20px !important;
 }
 
 .gameTable .hand .playingCard:first-child {
