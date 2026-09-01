@@ -3504,16 +3504,16 @@ box-sizing: border-box;
    ========================= */
 
 .gameTable .hand {
-  width: calc(100% - 16px) !important;
-  max-width: calc(100% - 16px) !important;
+  width: calc(100% - 20px) !important;
+  max-width: calc(100% - 20px) !important;
 
-  left: 50% !important;
-  transform: translateX(-50%) !important;
+  left: 10px !important;
+  transform: none !important;
 
   padding: 0 !important;
 
   display: flex !important;
-  justify-content: center !important;
+  justify-content: flex-start !important;
   align-items: flex-end !important;
 
   overflow: visible !important;
@@ -3531,25 +3531,17 @@ box-sizing: border-box;
 
   flex: 0 0 64px !important;
 
-  /*
-    Automatically changes spacing depending
-    on how many cards are in your hand.
-  */
-  margin-left: clamp(
-    -42px,
-    calc(
-      (
-        (100vw - 16px) -
-        (64px * var(--hand-count))
-      ) /
-      (var(--hand-count) - 1)
-    ),
-    8px
+  margin-left: calc(
+    (
+      (100vw - 20px) -
+      (64px * var(--hand-count))
+    ) /
+    (var(--hand-count) - 1)
   ) !important;
 }
 
 
-/* First card never needs a left margin */
+/* First card starts at the left edge of the hand */
 .gameTable .hand .playingCard:first-child {
   margin-left: 0 !important;
 }
