@@ -3522,19 +3522,19 @@ box-sizing: border-box;
 
 /* Cards */
 .gameTable .hand .playingCard {
-  width: 64px !important;
-  min-width: 64px !important;
-  max-width: 64px !important;
+  width: 58px !important;
+  min-width: 58px !important;
+  max-width: 58px !important;
 
-  height: 92px !important;
-  min-height: 92px !important;
+  height: 88px !important;
+  min-height: 88px !important;
 
-  flex: 0 0 64px !important;
+  flex: 0 0 58px !important;
 
   margin-left: calc(
     (
       (100vw - 20px) -
-      (64px * var(--hand-count))
+      (58px * var(--hand-count))
     ) /
     (var(--hand-count) - 1)
   ) !important;
