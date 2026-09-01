@@ -3507,7 +3507,7 @@ box-sizing: border-box;
   width: calc(100% - 12px) !important;
   max-width: calc(100% - 12px) !important;
 
-  left: 6px !important;
+ left: 10px !important;
   transform: none !important;
 
   padding: 0 !important;
@@ -3552,6 +3552,14 @@ box-sizing: border-box;
 .gameTable .hand .cardSuit {
   font-size: 22px !important;
   left: 6px !important;
+}
+/* Starting 5 cards: keep them grouped and overlapping */
+.gameTable .hand[style*="--hand-count: 5"] .playingCard {
+  margin-left: -12px !important;
+}
+
+.gameTable .hand[style*="--hand-count: 5"] .playingCard:first-child {
+  margin-left: 0 !important;
 }
 
 
