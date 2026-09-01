@@ -3499,81 +3499,57 @@ box-sizing: border-box;
   transform: translateY(6px);
 }
 
-  /* =========================
-     PLAYER HAND
-     ========================= */
+/* =========================
+   PLAYER HAND
+   ========================= */
 
-  .hand {
-    bottom: 8px;
+.gameTable .hand {
+  width: calc(100% - 16px) !important;
+  max-width: calc(100% - 16px) !important;
+  padding: 0 !important;
 
-    width: calc(100% - 12px);
+  justify-content: center !important;
 
-    padding: 0 4px;
-
-    justify-content: center;
-
-    /*
-      Important: don't allow the hand itself
-      to make the page wider than the phone.
-    */
-    overflow: visible;
-  }
-
-  .hand .playingCard {
-    /*
-      Keep cards readable instead of crushing
-      their individual width.
-    */
-    width: 54px;
-    height: 78px;
-
-    min-width: 54px;
-
-    padding: 5px;
-
-    border-radius: 6px;
-
-    /*
-      Heavy overlap allows all 13 cards to fit.
-    */
-    margin-left: -31px;
-  }
-
-  .hand .playingCard:first-child {
-    margin-left: 0;
-  }
-
-  .hand .cardRank {
-    font-size: 15px;
-  }
-
-  .hand .cardSuit {
-    font-size: 21px;
-  }
-
-  /*
-    Touch devices don't need the desktop hover
-    movement.
-  */
-  .hand .playingCard:hover {
-    transform: none;
-  }
+  overflow: visible !important;
+}
 
 
-  /* =========================
-     SORT BUTTON
-     ========================= */
+/* Cards can now use almost the entire bottom row */
+.gameTable .hand .playingCard {
+  width: 64px !important;
+  min-width: 64px !important;
+  height: 92px !important;
 
-  .sortButton {
-    margin-left: 5px;
+  margin-left: -41px !important;
+}
 
-    padding: 8px 8px;
+.gameTable .hand .playingCard:first-child {
+  margin-left: 0 !important;
+}
 
-    border-radius: 7px;
 
-    font-size: 11px;
-  }
+/* =========================
+   SORT BUTTON
+   ========================= */
 
+/*
+  Take Sort out of the card row and place it
+  above the left side of the hand.
+*/
+.gameTable .sortButton {
+  position: absolute !important;
+
+  left: 8px !important;
+  bottom: 98px !important;
+
+  margin: 0 !important;
+
+  padding: 6px 9px !important;
+
+  font-size: 10px !important;
+
+  z-index: 30 !important;
+}
 
   /* =========================
      HOKM CHOOSER
